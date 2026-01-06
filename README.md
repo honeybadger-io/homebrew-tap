@@ -50,14 +50,15 @@ hb --help
 Configure the CLI using environment variables:
 
 ```bash
-export HONEYBADGER_API_KEY=your-api-key-here
-export HONEYBADGER_ENDPOINT=https://api.honeybadger.io  # Optional
+export HONEYBADGER_API_KEY=your-project-api-key-here # For reporting deployments, running the agent, etc.
+export HONEYBADGER_AUTH_TOKEN=your-personal-token-here # For accessing the Data API to manage projects, etc.
+export HONEYBADGER_ENDPOINT=https://api.honeybadger.io  # Optional. Use https://eu-api.honeybadger.io for the EU region
 ```
 
 Or use a configuration file at `config/honeybadger.yml`:
 
 ```yaml
-api_key: your-api-key-here
+api_key: your-project-api-key-here
 endpoint: https://api.honeybadger.io
 ```
 
