@@ -5,21 +5,21 @@
 class Honeybadger < Formula
   desc "CLI tool to interact with the Honeybadger API"
   homepage "https://www.honeybadger.io/"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/honeybadger-io/cli/releases/download/v0.4.0/cli_Darwin_x86_64.tar.gz"
-      sha256 "bac74066af632b79d1cf33612d2da967243692ac6d7c4561ab41203c4fb9e9d0"
+      url "https://github.com/honeybadger-io/cli/releases/download/v0.5.0/cli_Darwin_x86_64.tar.gz"
+      sha256 "76075211c35c40288c6a4adc3c5a8861911ad420c54d82e394e340e1c014e4b6"
 
       def install
         bin.install "hb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/honeybadger-io/cli/releases/download/v0.4.0/cli_Darwin_arm64.tar.gz"
-      sha256 "1c8eebdcbece173011941a5a1d91a922e018b60f008695ee6136d76a6d60f12d"
+      url "https://github.com/honeybadger-io/cli/releases/download/v0.5.0/cli_Darwin_arm64.tar.gz"
+      sha256 "2d78afe4a516efc9dee5f8eef523b243a94cf0fb701ed10f55849e09f8cdae6d"
 
       def install
         bin.install "hb"
@@ -29,15 +29,15 @@ class Honeybadger < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/honeybadger-io/cli/releases/download/v0.4.0/cli_Linux_x86_64.tar.gz"
-      sha256 "5e204f3245d7c4bb1ec310c745667e6c7b4f998c288089b12e49804b5af64980"
+      url "https://github.com/honeybadger-io/cli/releases/download/v0.5.0/cli_Linux_x86_64.tar.gz"
+      sha256 "8f696c91bcba0c1b76ff0639024755bf92020b19868d338ef3034da270008679"
       def install
         bin.install "hb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/honeybadger-io/cli/releases/download/v0.4.0/cli_Linux_arm64.tar.gz"
-      sha256 "242489962f494dd45567dc7c771f6f05368f1d1149b14e2287146ba2ba2da4a3"
+      url "https://github.com/honeybadger-io/cli/releases/download/v0.5.0/cli_Linux_arm64.tar.gz"
+      sha256 "385b31591e54c6d73020eee00b787db13dd4654400c843c3cc59a5920897fc86"
       def install
         bin.install "hb"
       end
