@@ -1,25 +1,25 @@
 class Hbtui < Formula
   desc "Terminal dashboard for Honeybadger.io"
   homepage "https://www.honeybadger.io"
-  version "0.0.1"
+  version "0.0.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/honeybadger-io/hbtui/releases/download/v0.0.1/hbtui-aarch64-apple-darwin.tar.xz"
-      sha256 "bcce34db75d8dbb702041facaca52df0224aa4c8ee45bede188ce5eb46f2fd0b"
+      url "https://github.com/honeybadger-io/hbtui/releases/download/v0.0.2/hbtui-aarch64-apple-darwin.tar.xz"
+      sha256 "3a69cb5365046de1cd6d109a7b113c52ce1366b65dd146ac0e8a29bca9f35c69"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/honeybadger-io/hbtui/releases/download/v0.0.1/hbtui-x86_64-apple-darwin.tar.xz"
-      sha256 "5347ee23222a78c79d07d6346b8f2ec7bada8502daa00edcfeff621dce22c567"
+      url "https://github.com/honeybadger-io/hbtui/releases/download/v0.0.2/hbtui-x86_64-apple-darwin.tar.xz"
+      sha256 "8deee7bae98a96a6fe874a2cfed4678aad7a38ad8d54ea4c2d2264f536093137"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/honeybadger-io/hbtui/releases/download/v0.0.1/hbtui-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "63be1b74ec63c146c5080546e9b1954429b85949886fb7921e62d9324d175b84"
+      url "https://github.com/honeybadger-io/hbtui/releases/download/v0.0.2/hbtui-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "b88c3166f7fa229aa0580ef4999f6ba2bc5c7a268753ea711f10dd96c861d2ac"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/honeybadger-io/hbtui/releases/download/v0.0.1/hbtui-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f6149d33dbece14432bd0f92266b66ae88003269eaff83b35fbd652a9932aa41"
+      url "https://github.com/honeybadger-io/hbtui/releases/download/v0.0.2/hbtui-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "9072ab1751ad00bd7cff79833ed3da447be75bf40aeff822d490650105ab8b8e"
     end
   end
   license "MIT"
