@@ -5,23 +5,23 @@
 class Honeybadger < Formula
   desc "CLI tool to interact with the Honeybadger API"
   homepage "https://www.honeybadger.io/"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/honeybadger-io/cli/releases/download/v0.5.0/cli_Darwin_x86_64.tar.gz"
-      sha256 "76075211c35c40288c6a4adc3c5a8861911ad420c54d82e394e340e1c014e4b6"
+      url "https://github.com/honeybadger-io/cli/releases/download/v0.6.0/cli_Darwin_x86_64.tar.gz"
+      sha256 "236315fb8d505b17c8db436e2342d7c897873257e7cc2e9ff930167651e52d0c"
 
-      def install
+      define_method(:install) do
         bin.install "hb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/honeybadger-io/cli/releases/download/v0.5.0/cli_Darwin_arm64.tar.gz"
-      sha256 "2d78afe4a516efc9dee5f8eef523b243a94cf0fb701ed10f55849e09f8cdae6d"
+      url "https://github.com/honeybadger-io/cli/releases/download/v0.6.0/cli_Darwin_arm64.tar.gz"
+      sha256 "fc9806f2ef5a7b0bee0c0c36b8f10e11d2822646cdafcc6b4c59d49e1894f776"
 
-      def install
+      define_method(:install) do
         bin.install "hb"
       end
     end
@@ -29,16 +29,16 @@ class Honeybadger < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/honeybadger-io/cli/releases/download/v0.5.0/cli_Linux_x86_64.tar.gz"
-      sha256 "8f696c91bcba0c1b76ff0639024755bf92020b19868d338ef3034da270008679"
-      def install
+      url "https://github.com/honeybadger-io/cli/releases/download/v0.6.0/cli_Linux_x86_64.tar.gz"
+      sha256 "3a8ea384adce02c70e884d5cdc8c673f59ad6fc97f7809d15876e051060cf8d8"
+      define_method(:install) do
         bin.install "hb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/honeybadger-io/cli/releases/download/v0.5.0/cli_Linux_arm64.tar.gz"
-      sha256 "385b31591e54c6d73020eee00b787db13dd4654400c843c3cc59a5920897fc86"
-      def install
+      url "https://github.com/honeybadger-io/cli/releases/download/v0.6.0/cli_Linux_arm64.tar.gz"
+      sha256 "2350cec175fc798da18372667e5cc24f47fb230243d0c1c40440c8a79cdbd5bf"
+      define_method(:install) do
         bin.install "hb"
       end
     end
