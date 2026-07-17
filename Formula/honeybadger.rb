@@ -5,21 +5,21 @@
 class Honeybadger < Formula
   desc "CLI tool to interact with the Honeybadger API"
   homepage "https://www.honeybadger.io/"
-  version "0.8.0"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/honeybadger-io/cli/releases/download/v0.8.0/cli_Darwin_x86_64.tar.gz"
-      sha256 "f09cea78585363de402e4ca744a4e30dd2c8e11171eadbd5cfecc4ab10b510ae"
+      url "https://github.com/honeybadger-io/cli/releases/download/v0.9.0/cli_Darwin_x86_64.tar.gz"
+      sha256 "b600c9f2534982a0de190ca5b5c651d952609e80b41b2f506b444bc42b9090e0"
 
       define_method(:install) do
         bin.install "hb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/honeybadger-io/cli/releases/download/v0.8.0/cli_Darwin_arm64.tar.gz"
-      sha256 "7e296a0d35a4c107ba41ac16b9033b3a9ce52c99337c0dd0393c1bda9b289407"
+      url "https://github.com/honeybadger-io/cli/releases/download/v0.9.0/cli_Darwin_arm64.tar.gz"
+      sha256 "9cb29acb2b76d8c4937030d556f8b94365c8fd184d545a495559aaf2f7f56f25"
 
       define_method(:install) do
         bin.install "hb"
@@ -29,15 +29,15 @@ class Honeybadger < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/honeybadger-io/cli/releases/download/v0.8.0/cli_Linux_x86_64.tar.gz"
-      sha256 "4332ae286b85b18b900c3811df38cc6122fb2eaccc4c6dd5f5fa974800a1848a"
+      url "https://github.com/honeybadger-io/cli/releases/download/v0.9.0/cli_Linux_x86_64.tar.gz"
+      sha256 "80925dc7aee13208e4eadb547d5ac60faee383d794dfd324b334a63697488eb5"
       define_method(:install) do
         bin.install "hb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/honeybadger-io/cli/releases/download/v0.8.0/cli_Linux_arm64.tar.gz"
-      sha256 "f168a5f6d2aff541b7ba87f021b12a972b0b22834c7a678a5290a6ea70cf14f3"
+      url "https://github.com/honeybadger-io/cli/releases/download/v0.9.0/cli_Linux_arm64.tar.gz"
+      sha256 "52642a6444678c53607ac08a1da4876949b85642062d735e3ce37042e9677636"
       define_method(:install) do
         bin.install "hb"
       end
